@@ -1,6 +1,6 @@
 body {
   background-color: black;
-  margin: 0px;
+  margin: 200px 0px;
 }
 
 @font-face {
@@ -70,85 +70,10 @@ body {
   }
 }
 
-@media  screen and (max-width: 500px){
-  body {
-    background-color: black;
-    margin: 0px;
-  }
-  
-  @font-face {
-      font-family: System;
-      src: url(../Font/Minisystem.otf);
-  }
-  
-  @font-face {
-    font-family: Zero;
-    src: url(../Font/ZeroHour.otf);
-  }
-  
-  .box {
-    display: grid;
-    flex-direction: none;
-    align-items: center;
-    justify-content: center;
-
-  }
-  
-  .Data {
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    z-index: -1;
-    height: 200px;
-    width: 200px;
-    background-image: radial-gradient(rgba(0, 190, 255, 0.50) 45%, Black 60%);
-    animation: Glow 10s linear 2s infinite normal;
-    transform: scale(100%);
-  }
-  
-  .Place {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 700px;
-    width: 700px;
-  }
-  
-  .Font1 {
-    text-align: center;
-    font-family: Zero;
-    color: deepskyblue;
-    font-size: 15px;
-    margin: 0;
-  }
-  
-  .Font2 {
-    text-align: center;
-    font-family: System;
-    color: deepskyblue;
-    font-size: 90px;
-    margin: 0;
-  }
-  
-  @keyframes Glow { 
-    0% {
-      transform: scale(100%);
-    }
-    50% {
-      transform: scale(75%);
-    }
-    100% {
-      transform: scale(100%);
-    }
-  }
-}
-
 @media  screen and (max-width: 1024px){
   body {
     background-color: black;
-    margin: 0px;
+    margin: 200px 0px;
   }
   
   @font-face {
@@ -187,8 +112,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 700px;
-    width: 700px;
+    height: 250px;
+    width: 250px;
   }
   
   .Font1 {
@@ -218,4 +143,78 @@ body {
       transform: scale(100%);
     }
   }
+}
+
+@media  screen and (max-width: 768px){
+  body {
+  background-color: black;
+  margin: 200px 0px;
+}
+
+@font-face {
+    font-family: System;
+    src: url(../Font/Minisystem.otf);
+}
+
+@font-face {
+  font-family: Zero;
+  src: url(../Font/ZeroHour.otf);
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Data {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: -1;
+  height: 500px;
+  width: 500px;
+  background-image: radial-gradient(rgba(0, 190, 255, 0.50) 45%, Black 60%);
+  animation: Glow 10s linear 2s infinite normal;
+  transform: scale(100%);
+}
+
+.Place {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  width: 500px;
+}
+
+.Font1 {
+  text-align: center;
+  font-family: Zero;
+  color: deepskyblue;
+  font-size: 15px;
+  margin: 0;
+}
+
+.Font2 {
+  text-align: center;
+  font-family: System;
+  color: deepskyblue;
+  font-size: 75px;
+  margin: 0;
+}
+
+@keyframes Glow { 
+  0% {
+    transform: scale(100%);
+  }
+  50% {
+    transform: scale(75%);
+  }
+  100% {
+    transform: scale(100%);
+  }
+ }
 }
